@@ -1,6 +1,10 @@
-function describeCountry(country, population, capitalCity) { return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+'use strict';
+function describeCountry(country, population, capitalCity){
+    return `${country} has ${population} million people and its capital city is ${capitalCity}.`;
 }
-const descPortugal = describeCountry('Portugal', 10, 'Lisbon');
-const descGermany = describeCountry('Germany', 83, 'Berlin');
-const descFinland = describeCountry('Finland', 6, 'Helsinki');
-console.log(descPortugal, descGermany, descFinland);
+let descriptionUnitedStates =  describeCountry('United States', '131', 'Washington DC' );
+console.log(descriptionUnitedStates);
+let descriptionMoldova = describeCountry('Moldova', '2', 'Chisinau');
+console.log(descriptionMoldova);
+let descriptionSpain = describeCountry('Spain', '40', 'Madrid');
+console.log(descriptionSpain);
