@@ -30,17 +30,50 @@
 
 
 // function declaration
-function calcAge1 (birthYear) {
-    return 2037 - birthYear;
-}
-let age1 = calcAge1(1991);
-console.log(age1);
+// function calcAge1 (birthYear) {
+//     return 2037 - birthYear;
+// }
+// let age1 = calcAge1(1991);
+// console.log(age1);
 
 // function expression
-let calcAge2 = function (birthYear) {
-    return 2037 - birthYear
+// let calcAge2 = function (birthYear) {
+//     return 2037 - birthYear
+// }
+
+// let age2 = calcAge2(2003);
+// console.log(age2, age1);
+
+// Arrow functions
+
+// let calcAge3 = birthYear => 2037 - birthYear;
+// let age3 = calcAge3(1991)
+// console.log(age3);
+
+// let yearsUntilRetirement = (birthYear, firstName) => {
+//     let age = 2037 - birthYear;
+//     let retirement = 65 - age;
+//     // return retirement
+//     return `${firstName} retires in ${retirement} years!`;
+// }
+//
+// let retirementAge1 = yearsUntilRetirement(1991);
+// // console.log(retirementAge1);
+// console.log(yearsUntilRetirement(1991, 'Emily'));
+
+let yearsUntilRetirement = (birthYear, firstName) => {
+    let age = 2037 - birthYear;
+    if (age < 65) {
+        let retirement = 65 - age;
+        // return retirement
+        return `${firstName} retires in ${retirement} years!`;
+    } else if (age > 65) {
+        let retirement = age - 65
+        return `${firstName} retired ${retirement} years ago!`;
+    }
 }
 
-let age2 = calcAge2(2003);
-console.log(age2, age1);
+// let retirementAge1 = yearsUntilRetirement(1991);
+// console.log(retirementAge1);
+console.log(yearsUntilRetirement(1971, 'Emily'));
 
