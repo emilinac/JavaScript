@@ -79,14 +79,27 @@
 
 
 
-function cutFruitPieces(fruit){
-    return fruit * 4;
-};
-let fruitProcessor = function (apples, oranges){
-    let applePieces = cutFruitPieces(apples);
-    let orangePieces = cutFruitPieces(oranges);
+// function cutFruitPieces(fruit){
+//     return fruit * 4;
+// };
+// let fruitProcessor = function (apples, oranges){
+//     let applePieces = cutFruitPieces(apples);
+//     let orangePieces = cutFruitPieces(oranges);
+//
+//     let juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+//     return juice;
+// };
+// console.log(fruitProcessor(2, 3));
 
-    let juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
-    return juice;
-};
-console.log(fruitProcessor(2, 3));
+let calcAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+let yearsUntilRetirement = function (birthYear, firstName) {
+    let age = calcAge(birthYear);
+    let retirement = 65 - age;
+    return retirement;
+    // return `${firstName} retires in ${retirement} years!`;
+}
+
+console.log(yearsUntilRetirement(1991, 'Emily'));
