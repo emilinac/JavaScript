@@ -91,15 +91,15 @@
 // };
 // console.log(fruitProcessor(2, 3));
 
-let calcAge = function (birthYear) {
-    return 2037 - birthYear;
-}
+// let calcAge = function (birthYear) {
+//     return 2037 - birthYear;
+// }
 
-let yearsUntilRetirement = function (birthYear, firstName) {
-    let age = calcAge(birthYear);
-    let retirement = 65 - age;
-    return retirement;
+// let yearsUntilRetirement = function (birthYear, firstName) {
+//     let age = calcAge(birthYear);
+//     let retirement = 65 - age;
+//     return retirement;
     // return `${firstName} retires in ${retirement} years!`;
-}
+// }
 
-console.log(yearsUntilRetirement(1991, 'Emily'));
+// console.log(yearsUntilRetirement(1991, 'Emily'));
