@@ -103,3 +103,42 @@
 // }
 
 // console.log(yearsUntilRetirement(1991, 'Emily'));
+
+
+let friend1 = 'Emily';
+let friend2 = 'Ruben';
+let friend3 = 'Marius';
+
+let friends = ['Emily', 'Ruben', 'Marius'];
+// friends[2] = 'Mark';
+console.log(friends);
+
+// let year = new Array(1991, 1992, 1984, 2018);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length)
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Mark';
+console.log(friends);
+// friends = ['Bob', 'Alice'] = illegal because you can't change the entire text
+
+let emily = ['Emily', 'Sanduleac', 2037 - 2003, 'teacher', friends];
+console.log(emily);
+console.log(emily.length);
+
+//Exercise
+let calcAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+let years = [1990, 1967, 2002, 2010, 2018];
+let age1 = calcAge(years[0]);
+let age2 = calcAge(years[1]);
+let age3 = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+let age = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
