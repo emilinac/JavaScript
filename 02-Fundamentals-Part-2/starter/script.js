@@ -104,41 +104,70 @@
 
 // console.log(yearsUntilRetirement(1991, 'Emily'));
 
-
-let friend1 = 'Emily';
-let friend2 = 'Ruben';
-let friend3 = 'Marius';
+//
+// let friend1 = 'Emily';
+// let friend2 = 'Ruben';
+// let friend3 = 'Marius';
+//
+// let friends = ['Emily', 'Ruben', 'Marius'];
+// // friends[2] = 'Mark';
+// console.log(friends);
+//
+// // let year = new Array(1991, 1992, 1984, 2018);
+//
+// console.log(friends[0]);
+// console.log(friends[2]);
+//
+// console.log(friends.length)
+// console.log(friends[friends.length - 1]);
+//
+// friends[2] = 'Mark';
+// console.log(friends);
+// // friends = ['Bob', 'Alice'] = illegal because you can't change the entire text
+//
+// let emily = ['Emily', 'Sanduleac', 2037 - 2003, 'teacher', friends];
+// console.log(emily);
+// console.log(emily.length);
+//
+// //Exercise
+// let calcAge = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+//
+// let years = [1990, 1967, 2002, 2010, 2018];
+// let age1 = calcAge(years[0]);
+// let age2 = calcAge(years[1]);
+// let age3 = calcAge(years[years.length - 1]);
+//
+// console.log(age1, age2, age3);
+//
+// let age = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 
 let friends = ['Emily', 'Ruben', 'Marius'];
-// friends[2] = 'Mark';
+
+// Add elements
+let newLength = friends.push('Jay');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John');
 console.log(friends);
 
-// let year = new Array(1991, 1992, 1984, 2018);
-
-console.log(friends[0]);
-console.log(friends[2]);
-
-console.log(friends.length)
-console.log(friends[friends.length - 1]);
-
-friends[2] = 'Mark';
+// Remove elements
+friends.pop(); // last
+let popped = friends.pop();
+console.log(popped);
 console.log(friends);
-// friends = ['Bob', 'Alice'] = illegal because you can't change the entire text
 
-let emily = ['Emily', 'Sanduleac', 2037 - 2003, 'teacher', friends];
-console.log(emily);
-console.log(emily.length);
+friends.shift(); // first
+console.log(friends);
 
-//Exercise
-let calcAge = function (birthYear) {
-    return 2037 - birthYear;
+console.log(friends.indexOf('Ruben'));
+console.log(friends.indexOf('Bob'));
+
+console.log(friends.includes('Ruben'));
+console.log(friends.includes('Bob'));
+
+if (friends.includes('Ruben')){
+    console.log('You have a friend called Ruben');
 }
-
-let years = [1990, 1967, 2002, 2010, 2018];
-let age1 = calcAge(years[0]);
-let age2 = calcAge(years[1]);
-let age3 = calcAge(years[years.length - 1]);
-
-console.log(age1, age2, age3);
-
-let age = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
